@@ -25,7 +25,7 @@ ENV SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/app \
     SERVER_PORT=8080 \
     JAVA_OPTS="-Xmx2g -Xms512m"
 
-# Копируем собранный jar (он уже внутри /app/target после сборки)
+# Копируем собранный jar
 RUN cp target/*.jar app.jar
 
 # Добавляем healthcheck
